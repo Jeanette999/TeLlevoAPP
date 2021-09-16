@@ -7,7 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { Viaje2PageRoutingModule } from './viaje2-routing.module';
 
 import { Viaje2Page } from './viaje2.page';
-import {MatListIconCssMatStyler, MatListModule} from '@angular/material/list';
+import { MatListModule} from '@angular/material/list';
 import {MatCardModule} from '@angular/material/card';
 import { MatDividerModule } from '@angular/material/divider';
 
