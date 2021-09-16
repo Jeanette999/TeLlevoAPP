@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar class="ion-text-center" color="dark">
+    <ion-title>TeLlevoAPP</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="secondary">
+  <div class="ion-padding-vertical">
+    <ion-card id="card1" class="ion-text-center">
+      <ion-card-title class="ion-text-center">
+        <ion-label id="titulo1">
+          <h1 style="padding-top: 5%;">Iniciar Sesión</h1>
+        </ion-label>
+      </ion-card-title>
+      <ion-card-content>
+        <ion-item>
+          <ion-label position="floating">Nombre de Usuario</ion-label>
+          <ion-input type="text" [(ngModel)]="dato"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Contraseña</ion-label>
+          <ion-input type="password"></ion-input>
+        </ion-item>
+      </ion-card-content>
+      <ion-button shape="small size" color="medium" [routerLink]="['/restablecer']">Reestablecer Contraseña</ion-button>
+      <ion-button shape="block width" (click)="acceder()">Acceder</ion-button>
+    </ion-card>
+  </div>
+</ion-content>

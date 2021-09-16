@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>TeLlevoAPP</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="secondary">
+  <ion-card-header>
+  </ion-card-header>
+  <ion-card>
+    <img src="assets/img/auto.jfif">
+    <ion-card-content>
+      <ion-card-title><b>Bienvenid@ {{dato}}</b></ion-card-title>
+        <ion-label>TeLlevoAPP es una aplicación que te permite
+        organizar viajes para que puedas retornar 
+        a tu hogar utilizando vehículos de alumnos que 
+        cuentan con movilización propia.</ion-label>
+    </ion-card-content>
+  </ion-card>
+
+  <div>
+    <ion-list>
+      <ion-item>
+        <ion-icon slot="end" name="home"></ion-icon>
+        <ion-label>Selecciona tu sede</ion-label>
+      </ion-item>
+      <ion-item [routerLink]="['/viaje']" deail>
+        <ion-label id="a">Viña del Mar</ion-label>
+      </ion-item>
+      <ion-item [routerLink]="['/viaje']" deail>
+        <ion-label id="a">Valparaíso</ion-label>
+      </ion-item>
+      <ion-item [routerLink]="['/viaje']" deail>
+        <ion-label id="a">San Joaquín</ion-label>
+      </ion-item>
+      <ion-item [routerLink]="['/viaje']" deail>
+        <ion-label id="a">Plaza Oeste</ion-label>
+      </ion-item>
+      <ion-item [routerLink]="['/viaje']" deail>
+        <ion-label id="a">Alameda</ion-label>
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>

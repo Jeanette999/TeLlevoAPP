@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-button slot="start" color="dark" [routerLink]="['/home']">
+      <ion-icon name="arrow-undo-outline"></ion-icon>
+    </ion-button>
+    <ion-title>Restablecer</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="secondary">
+  <div class="ion-padding-vertical">
+    <ion-card-content id="card3">
+      <ion-item>
+        <ion-label position="floating">Ingrese Nombre de Usuario</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Correo electrónico</ion-label>
+        <ion-input type="email" [(ngModel)]="correo"></ion-input>
+      </ion-item>
+      <ion-button shape="block" (click)="recuContra()">Recuperar</ion-button>
+    </ion-card-content>
+  </div>
+</ion-content>

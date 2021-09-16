@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-toolbar color="dark" >
+    <ion-button slot="start" color="dark" [routerLink]="['/viaje']">
+      <ion-icon name="arrow-undo-outline"></ion-icon>
+    </ion-button>
+    <ion-title>Programar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="secondary">
+  <div class="ion-padding-vertical">
+    <ion-card class="ion-text-center">
+      <ion-card-title class="ion-text-center">
+        <ion-label>
+          <h3 style="padding-top: 5%;"><b>Programando mi viaje</b></h3>
+        </ion-label>
+      </ion-card-title>
+      <ion-card-content>
+        <ion-item>
+          <ion-label position="floating">Nombre</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Apellido</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Marca de auto</ion-label>
+          <ion-select>
+            <ion-select-option value="0">Chevrolet</ion-select-option>
+            <ion-select-option value="1">Hyundai</ion-select-option>
+            <ion-select-option value="2">Nissan</ion-select-option>
+            <ion-select-option value="3">Chery</ion-select-option>
+            <ion-select-option value="4">Suzuki</ion-select-option>
+            <ion-select-option value="5">Toyota</ion-select-option>
+            <ion-select-option value="6">	Kia</ion-select-option>
+            <ion-select-option value="7">MG</ion-select-option>
+          </ion-select>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Patente</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Capacidad disponible</ion-label>
+          <ion-input type="number" min="1"></ion-input>
+        </ion-item>
+      </ion-card-content>
+      <ion-button shape="block width">Programar</ion-button>
+    </ion-card>
+  </div>
+</ion-content>
