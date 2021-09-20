@@ -8,14 +8,13 @@ import { ToastController } from '@ionic/angular';
   styleUrls: ['./restablecer.page.scss'],
 })
 export class RestablecerPage implements OnInit{
-  dato: any;
   correo: String;
   constructor(public toastController: ToastController, private router: Router) {}
   recuContra(){
     this.presentToast("Contraseña enviada al correo "+this.correo)
     
     let navigationExtra: NavigationExtras={
-      state:{dato: this.dato}
+      state:{dato: this.correo}
     }
     this.router.navigate(['/home'],navigationExtra);
 
